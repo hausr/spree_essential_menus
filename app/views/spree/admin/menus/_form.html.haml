@@ -25,7 +25,7 @@
   %em= t("spree.admin.menus.explain_visible")
   = error_message_on :menu, :visible
 
-%h3 Opcjonalnie
+%h3 t(:options)
 - if Spree::Menu.all.count > 0 #and false#turn off for futher improvement
   = form.field_container :parent_id do
     = form.label :parent_id, t('spree.admin.menus.parent_id')
